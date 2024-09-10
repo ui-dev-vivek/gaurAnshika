@@ -1,0 +1,152 @@
+/* General font for the entire blog */
+body {
+    font-family: 'Noto Sans Devanagari', 'Hind', 'Mangal', Arial, sans-serif;
+    font-size: 16px;
+    color: #555555;
+    /* Paragraph text color */
+    line-height: 1.6;
+    background-color: #d4cdcd;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+    /* Darker color for headings */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #666666;
+    /* Slightly lighter than headings */
+}
+
+/* Additional Styling for Links */
+a {
+    color: #007bff;
+    /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight important text */
+strong {
+    color: #000000;
+}
+
+/* For blockquotes (if any) */
+blockquote {
+    border-left: 5px solid #dddddd;
+    padding-left: 15px;
+    color: #555555;
+    font-style: italic;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+}
+
+/* Preloader container to cover the whole page */
+#asg_pl_preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d4cdcd;
+    /* White background for preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Spinner CSS */
+.asg_pl_spinner {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.asg_pl_spinner div {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 50%;
+    animation: asg_pl_spinner-4t3wzl 1.25s infinite backwards;
+}
+
+.asg_pl_spinner div:nth-child(1) {
+    animation-delay: 0.15s;
+    background-color: red;
+}
+
+.asg_pl_spinner div:nth-child(2) {
+    animation-delay: 0.3s;
+    background-color: yellow;
+}
+
+.asg_pl_spinner div:nth-child(3) {
+    animation-delay: 0.45s;
+    background-color: blue;
+}
+
+.asg_pl_spinner div:nth-child(4) {
+    animation-delay: 0.6s;
+    background-color: green;
+}
+
+.asg_pl_spinner div:nth-child(5) {
+    animation-delay: 0.75s;
+    background-color: black;
+}
+
+@keyframes asg_pl_spinner-4t3wzl {
+    0% {
+        transform: rotate(0deg) translateY(-200%);
+    }
+
+    60%,
+    100% {
+        transform: rotate(360deg) translateY(-200%);
+    }
+}
